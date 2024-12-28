@@ -1,0 +1,1 @@
+TypeScript, um bot lesgau
