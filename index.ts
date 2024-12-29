@@ -6,7 +6,7 @@ const commandsPath = path.join(__dirname, "commands");
 const commandFiles = fs.readdirSync(commandsPath).filter((file) => file.endsWith(".ts"));
 
 fs.readdirSync(commandsPath).filter((file) => file.endsWith(".ts")).forEach(comando=>{
-    let command = require(path.join(commandsPath, comando)
+    let command = require(path.join(commandsPath, comando))
     if("run" in command && "data" in command){
         commands.push(command)
     }
